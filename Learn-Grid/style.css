@@ -1,0 +1,181 @@
+html{
+    background-color: aliceblue;
+    display: block;
+    margin: auto;
+    padding: 1%;
+}
+
+.container {
+    background-color: rgb(243, 243, 225);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    line-height: 1.6em;
+    word-spacing: 0.5em;
+    letter-spacing: 0.1em;
+    padding: 5px;
+    margin: 1px;
+}
+.container{
+
+    display: grid;
+    grid-gap: 0%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 280px 1fr 400px;
+    grid-template-areas: 
+    "div1"
+    "div2"
+    "div3";    
+}
+    
+
+a {
+    text-decoration: none;
+    color: rgb(88, 95, 5);
+}
+a:hover{
+    color: rgb(76, 154, 106);
+    font-weight: bold;
+}
+a:active{
+    color: red;
+}
+
+.div1{
+    background-color: rgb(66, 29, 29);
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid rgb(215, 209, 221);
+    
+}
+
+.div3{
+    background-color: rgb(147, 184, 193);
+    border: 2px solid rgb(224, 118, 80);
+}
+
+.div2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(109, 129, 109);
+    padding-top: 1%;
+}
+
+
+footer li {
+    border: 2px solid rgb(135, 192, 221);
+    background-color: rgb(197, 227, 243);
+    width: auto;
+    margin: 4px;
+    margin-left: 0px;
+    }
+
+footer nav{
+        padding: 0%;
+        margin: auto;
+        border: 5px dotted black;
+    }
+
+footer nav li{
+        border: 2px solid rgb(129, 127, 127);
+        background-color: rgb(189, 206, 231);
+        width: auto;
+    }
+ul{
+    list-style: none;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h1{
+    color: azure;
+    background-color: black;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    margin: 0px
+
+}
+head ul{
+    margin: auto;
+    padding-top: 0%;
+    padding-bottom: 5px;
+}
+aside{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    margin: auto;
+    padding: 2px;
+    width: auto;
+    height: 100px;
+}
+
+@media (min-width: 700px){
+    .container{
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        grid-template-rows: 1fr 400px;
+        grid-template-areas: 
+        "div1 div2"
+        "div1 div3"
+    }
+    .div3{
+        background-color: blueviolet;
+        margin-left: 250px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1024px){
+    .container{
+        display: grid;
+        grid-template-columns: 200px auto 200px;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "div1 div2 div3"
+        "div1 div2 div3";
+    }
+    .div3{
+        background-color: rgb(194, 194, 69);
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: first baseline;
+    }
+}
+.form-group{
+    padding: 20px;
+    padding-bottom: 5px;
+}
+.form-group label{
+    display: block;
+}
+button{
+    padding-left: 10px;
+    margin-left: 10px;
+    width: 170px;
+    margin-bottom: 10px;
+}
+.form-group input[type="text"] , .form-group textarea{
+    padding: 2px;
+    width: 100%;
+}
+.form-group input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+.images{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns:  30% 30% 30%; 
+    grid-template-rows: 200px;
+}
